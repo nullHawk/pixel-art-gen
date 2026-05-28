@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anime-pixel-dataset"
+version = "0.1.0"
+description = "CLI for converting Hugging Face anime image datasets with WuZongWei6/Pixelization."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "datasets>=2.18",
+  "huggingface-hub>=0.36",
+  "pillow>=10.0",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+pixelization = [
+  "torch",
+  "torchvision",
+]
+
+[project.scripts]
+anime-pixel-dataset = "anime_pixel_dataset.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
