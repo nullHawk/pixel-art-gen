@@ -1,5 +1,19 @@
 # Anime Pixel Dataset CLI
 
+<table>
+  <tr>
+    <td align="center">
+      <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/463d8d50-0dc1-4abc-a488-9df4f9a7ed7e" />
+      <br>
+      Orignal Image
+    </td>
+    <td align="center">
+      <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/d7201788-1830-4554-907a-e56da7b88f14" />
+      <br>
+      Pixel Art version
+    </td>
+  </tr>
+</table>
 This project converts the Hugging Face dataset `minoruskore/anime-faces-256` into pixel art using the upstream `WuZongWei6/Pixelization` implementation.
 
 The Pixelization code and checkpoints are not vendored here. Its license is for non-commercial scientific research use, so keep the upstream repo and model setup explicit.
